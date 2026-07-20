@@ -13,17 +13,17 @@ const typeIcon = {
 };
 
 const typeColor = {
-  truck: "bg-freight-50 text-freight-600",
+  truck: "bg-emerald-50 text-emerald-600",
   cargo: "bg-accent-50 text-accent-600",
-  container: "bg-navy-100 text-navy-700",
+  container: "bg-navy-50 text-navy-600",
   agriculture: "bg-emerald-50 text-emerald-600",
 };
 
 const statusColor: Record<string, string> = {
-  "Available Tomorrow": "bg-freight-50 text-freight-700",
+  "Available Tomorrow": "bg-emerald-50 text-emerald-700",
   "Available Now": "bg-emerald-50 text-emerald-700",
   "Urgent Delivery": "bg-accent-50 text-accent-700",
-  "Booking Open": "bg-navy-100 text-navy-700",
+  "Booking Open": "bg-slate-panel text-charcoal",
 };
 
 export function ListingCard({ listing }: { listing: MarketplaceListing }) {
@@ -76,7 +76,7 @@ export function ListingCard({ listing }: { listing: MarketplaceListing }) {
         ))}
       </div>
 
-      <button className="mt-5 flex items-center justify-between rounded-xl border border-navy-200 px-3.5 py-2.5 text-[13px] font-semibold text-navy-800 transition-colors group-hover:border-freight-300 group-hover:bg-freight-50 group-hover:text-freight-700">
+      <button className="mt-5 flex items-center justify-between rounded-xl border border-navy-200 px-3.5 py-2.5 text-[13px] font-semibold text-navy-800 transition-colors group-hover:border-emerald-300 group-hover:bg-emerald-50 group-hover:text-emerald-700">
         {listing.ctaLabel}
         <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
       </button>

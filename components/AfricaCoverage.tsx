@@ -31,7 +31,7 @@ export function AfricaCoverage() {
                     <h4 className="text-[14.5px] font-semibold text-navy-900">
                       {region.name}
                     </h4>
-                    <span className="rounded-full bg-navy-900 px-2 py-0.5 text-[11px] font-medium text-white">
+                    <span className="rounded-full bg-emerald-600 px-2 py-0.5 text-[11px] font-medium text-white">
                       {region.code}
                     </span>
                   </div>

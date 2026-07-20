@@ -84,8 +84,8 @@ const config: Config = {
       backgroundImage: {
         "grid-faint":
           "linear-gradient(to right, rgba(148,163,184,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.08) 1px, transparent 1px)",
-        "navy-radial":
-          "radial-gradient(circle at 20% 20%, rgba(37,99,235,0.25), transparent 45%), radial-gradient(circle at 80% 0%, rgba(22,163,74,0.18), transparent 40%)",
+        "hero-radial":
+          "radial-gradient(circle at 15% 10%, rgba(22,163,74,0.10), transparent 45%), radial-gradient(circle at 85% 0%, rgba(249,115,22,0.08), transparent 40%)",
       },
       backgroundSize: {
         grid: "40px 40px",
@@ -95,7 +95,7 @@ const config: Config = {
         card: "0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -8px rgba(15,23,42,0.12)",
         "card-hover":
           "0 1px 2px rgba(15,23,42,0.06), 0 16px 40px -12px rgba(15,23,42,0.22)",
-        glow: "0 0 0 1px rgba(37,99,235,0.15), 0 8px 30px -8px rgba(37,99,235,0.35)",
+        glow: "0 1px 2px rgba(15,23,42,0.05), 0 10px 28px -8px rgba(15,23,42,0.18)",
       },
       borderRadius: {
         xl: "0.875rem",

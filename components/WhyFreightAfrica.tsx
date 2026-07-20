@@ -18,14 +18,12 @@ const icons = [RefreshCw, Zap, BadgeCheck, Globe2, Clock, TrendingUp, Network, R
 
 export function WhyFreightAfrica() {
   return (
-    <section className="section-pad bg-navy-900">
-      <div className="pointer-events-none absolute" />
+    <section className="section-pad bg-slate-canvas">
       <div className="container-page relative">
         <SectionHeading
           eyebrow="Why Freight Africa"
           title="Everything your freight operation needs, in one network."
           align="center"
-          light
           className="mx-auto"
         />
 
@@ -39,15 +37,15 @@ export function WhyFreightAfrica() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: (i % 4) * 0.08 }}
-                className="glass-panel rounded-2xl p-6"
+                className="rounded-2xl border border-slate-line bg-white p-6 shadow-card"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
-                  <Icon className="h-5 w-5 text-emerald-400" strokeWidth={1.75} />
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50">
+                  <Icon className="h-5 w-5 text-emerald-600" strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 text-[15.5px] font-semibold text-white">
+                <h3 className="mt-4 text-[15.5px] font-semibold text-navy-900">
                   {benefit.title}
                 </h3>
-                <p className="mt-2 text-[13.5px] leading-relaxed text-white/60">
+                <p className="mt-2 text-[13.5px] leading-relaxed text-charcoal-light">
                   {benefit.description}
                 </p>
               </motion.div>

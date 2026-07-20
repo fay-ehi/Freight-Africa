@@ -36,7 +36,7 @@ export function FAQSection() {
                     <Plus
                       className={cn(
                         "h-[18px] w-[18px] shrink-0 text-navy-400 transition-transform duration-300",
-                        isOpen && "rotate-45 text-freight-500"
+                        isOpen && "rotate-45 text-emerald-600"
                       )}
                     />
                   </button>

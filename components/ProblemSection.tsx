@@ -59,8 +59,8 @@ export function ProblemSection() {
                 transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
                 className="rounded-2xl border border-slate-line bg-slate-canvas p-6 transition-colors hover:border-navy-200 hover:bg-white hover:shadow-card"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-900">
-                  <Icon className="h-5 w-5 text-freight-400" strokeWidth={1.75} />
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-50">
+                  <Icon className="h-5 w-5 text-accent-600" strokeWidth={1.75} />
                 </span>
                 <h3 className="mt-4 text-[16px] font-semibold text-navy-900">
                   {problem.title}

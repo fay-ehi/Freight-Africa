@@ -33,8 +33,8 @@ export function Navbar() {
     >
       <nav className="container-page flex h-[72px] items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-navy-900">
-            <Compass className="h-5 w-5 text-freight-400" strokeWidth={2} />
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50">
+            <Compass className="h-5 w-5 text-emerald-600" strokeWidth={2} />
           </span>
           <span className="text-[17px] font-semibold tracking-tight text-navy-900">
             Freight Africa

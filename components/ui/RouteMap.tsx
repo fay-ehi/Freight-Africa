@@ -42,9 +42,9 @@ interface RouteMapProps {
 }
 
 export function RouteMap({ className, variant = "dark", interactive = true }: RouteMapProps) {
-  const strokeColor = variant === "dark" ? "#38bdf8" : "#2563EB";
-  const fillColor = variant === "dark" ? "rgba(148,163,184,0.10)" : "rgba(37,99,235,0.06)";
-  const outlineColor = variant === "dark" ? "rgba(148,163,184,0.35)" : "rgba(37,99,235,0.25)";
+  const strokeColor = "#16A34A";
+  const fillColor = variant === "dark" ? "rgba(22,163,74,0.07)" : "rgba(22,163,74,0.05)";
+  const outlineColor = variant === "dark" ? "rgba(22,163,74,0.30)" : "rgba(22,163,74,0.22)";
 
   const activeNodes = new Set<MapNodeKey>();
   heroCorridors.forEach((c) => {

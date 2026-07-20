@@ -41,8 +41,8 @@ export function MarketplacePreview() {
                 className={cn(
                   "rounded-full border px-4 py-2 text-[13.5px] font-medium transition-colors",
                   active === f.value
-                    ? "border-navy-900 bg-navy-900 text-white"
-                    : "border-slate-line bg-white text-charcoal-light hover:border-navy-300 hover:text-navy-900"
+                    ? "border-emerald-600 bg-emerald-600 text-white"
+                    : "border-slate-line bg-white text-charcoal-light hover:border-emerald-300 hover:text-navy-900"
                 )}
               >
                 {f.label}

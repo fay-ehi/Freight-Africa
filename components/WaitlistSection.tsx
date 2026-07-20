@@ -22,7 +22,7 @@ const userTypes = [
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClasses =
-  "w-full rounded-xl border border-navy-200 bg-white px-4 py-3 text-[14.5px] text-navy-900 placeholder:text-navy-300 transition-colors focus:border-freight-400 focus:outline-none";
+  "w-full rounded-xl border border-navy-200 bg-white px-4 py-3 text-[14.5px] text-navy-900 placeholder:text-navy-300 transition-colors focus:border-emerald-400 focus:outline-none";
 
 export function WaitlistSection() {
   const [status, setStatus] = useState<Status>("idle");

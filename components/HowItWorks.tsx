@@ -4,8 +4,15 @@ import { motion } from "framer-motion";
 import { Truck, Building2 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { transporterSteps, businessSteps, type ProcessStep } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
-function StepList({ steps }: { steps: ProcessStep[] }) {
+function StepList({
+  steps,
+  accent = "emerald",
+}: {
+  steps: ProcessStep[];
+  accent?: "emerald" | "accent";
+}) {
   return (
     <ol className="relative mt-8 space-y-8">
       <div className="absolute left-[19px] top-2 bottom-2 w-px bg-slate-line" aria-hidden="true" />
@@ -18,7 +25,14 @@ function StepList({ steps }: { steps: ProcessStep[] }) {
           transition={{ duration: 0.45, delay: i * 0.08 }}
           className="relative flex gap-5"
         >
-          <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-freight-500 bg-white text-[14px] font-semibold text-freight-600">
+          <span
+            className={cn(
+              "relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 bg-white text-[14px] font-semibold",
+              accent === "emerald"
+                ? "border-emerald-500 text-emerald-600"
+                : "border-accent-500 text-accent-600"
+            )}
+          >
             {i + 1}
           </span>
           <div className="pt-1.5">
@@ -47,8 +61,8 @@ export function HowItWorks() {
         <div className="mt-16 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="rounded-3xl border border-slate-line bg-slate-canvas p-7 sm:p-9">
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-900">
-                <Truck className="h-5 w-5 text-freight-400" strokeWidth={1.75} />
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50">
+                <Truck className="h-5 w-5 text-emerald-600" strokeWidth={1.75} />
               </span>
               <div>
                 <p className="text-[13px] font-medium uppercase tracking-wide text-navy-400">
@@ -59,13 +73,13 @@ export function HowItWorks() {
                 </p>
               </div>
             </div>
-            <StepList steps={transporterSteps} />
+            <StepList steps={transporterSteps} accent="emerald" />
           </div>
 
           <div className="rounded-3xl border border-slate-line bg-slate-canvas p-7 sm:p-9">
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-900">
-                <Building2 className="h-5 w-5 text-emerald-400" strokeWidth={1.75} />
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-50">
+                <Building2 className="h-5 w-5 text-accent-600" strokeWidth={1.75} />
               </span>
               <div>
                 <p className="text-[13px] font-medium uppercase tracking-wide text-navy-400">
@@ -76,7 +90,7 @@ export function HowItWorks() {
                 </p>
               </div>
             </div>
-            <StepList steps={businessSteps} />
+            <StepList steps={businessSteps} accent="accent" />
           </div>
         </div>
       </div>

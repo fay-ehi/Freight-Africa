@@ -6,12 +6,10 @@ const base =
 
 const variants = {
   primary:
-    "bg-freight-500 text-white shadow-glow hover:bg-freight-600 active:bg-freight-700",
+    "bg-emerald-500 text-white shadow-glow hover:bg-emerald-600 active:bg-emerald-700",
   secondary:
     "bg-white text-navy-900 border border-navy-200 hover:border-navy-300 hover:bg-navy-50 shadow-soft",
   ghost: "text-navy-700 hover:bg-navy-100/60",
-  outlineLight:
-    "border border-white/25 text-white hover:bg-white/10 backdrop-blur-sm",
   accent: "bg-accent-500 text-white hover:bg-accent-600 shadow-glow",
 };
 

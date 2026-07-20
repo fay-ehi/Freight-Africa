@@ -78,7 +78,7 @@ export function PlatformSection() {
                   className="relative z-10 rounded-2xl border border-slate-line bg-white p-6 shadow-card transition-shadow hover:shadow-card-hover"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-freight-50 text-freight-600">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </span>
                     <span className="text-[13px] font-medium text-navy-300">

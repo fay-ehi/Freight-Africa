@@ -33,21 +33,29 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-navy-900 pb-16 pt-32 sm:pb-24 sm:pt-40"
+      className="relative overflow-hidden bg-white pb-16 pt-32 sm:pb-24 sm:pt-40"
     >
-      <div className="pointer-events-none absolute inset-0 bg-navy-radial" />
-      <div className="pointer-events-none absolute inset-0 bg-grid-faint bg-grid opacity-40 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-hero-radial" />
+      <div className="pointer-events-none absolute inset-0 bg-grid-faint bg-grid opacity-30 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
 
       <div className="container-page relative">
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            
+            <motion.span
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="eyebrow"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              Now boarding early access transporters &amp; shippers
+            </motion.span>
 
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-balance mt-6 text-[40px] font-semibold leading-[1.08] tracking-tight text-white sm:text-[56px]"
+              className="text-balance mt-6 text-[40px] font-semibold leading-[1.08] tracking-tight text-navy-900 sm:text-[56px]"
             >
               Connecting available trucks with freight, across Africa.
             </motion.h1>
@@ -56,7 +64,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-balance mt-6 max-w-xl text-[17px] leading-relaxed text-white/65"
+              className="text-balance mt-6 max-w-xl text-[17px] leading-relaxed text-charcoal-light"
             >
               Post available trucks, publish loads, and match cargo with
               capacity across every major freight corridor \u2014 from Lagos to
@@ -73,7 +81,7 @@ export function Hero() {
                 Find Transport
                 <ArrowRight className="h-4 w-4" />
               </LinkButton>
-              <LinkButton href="#waitlist" variant="outlineLight" size="lg">
+              <LinkButton href="#waitlist" variant="secondary" size="lg">
                 Post Available Truck
               </LinkButton>
             </motion.div>
@@ -82,12 +90,12 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.45 }}
-              className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/10 pt-7 text-[13px] text-white/50"
+              className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-slate-line pt-7 text-[13px] text-charcoal-light"
             >
               <span>Built for ECOWAS, SADC &amp; COMESA corridors</span>
-              <span className="hidden h-1 w-1 rounded-full bg-white/30 sm:block" />
+              <span className="hidden h-1 w-1 rounded-full bg-navy-200 sm:block" />
               <span>Verified drivers &amp; businesses</span>
-              <span className="hidden h-1 w-1 rounded-full bg-white/30 sm:block" />
+              <span className="hidden h-1 w-1 rounded-full bg-navy-200 sm:block" />
               <span>Cross-border ready</span>
             </motion.div>
           </div>
@@ -112,17 +120,17 @@ export function Hero() {
                     ease: "easeInOut",
                     delay: card.delay,
                   }}
-                  className={`glass-panel absolute hidden w-[168px] rounded-xl px-3.5 py-3 shadow-glow sm:block ${card.className}`}
+                  className={`glass-panel absolute hidden w-[168px] rounded-xl px-3.5 py-3 shadow-card sm:block ${card.className}`}
                 >
                   <div className="flex items-center gap-2">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-white/10">
-                      <Icon className="h-3.5 w-3.5 text-freight-300" strokeWidth={2} />
+                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-50">
+                      <Icon className="h-3.5 w-3.5 text-emerald-600" strokeWidth={2} />
                     </span>
                     <div className="min-w-0">
-                      <p className="truncate text-[12.5px] font-semibold text-white">
+                      <p className="truncate text-[12.5px] font-semibold text-navy-900">
                         {card.label}
                       </p>
-                      <p className="truncate text-[11px] text-white/55">{card.sub}</p>
+                      <p className="truncate text-[11px] text-charcoal-light">{card.sub}</p>
                     </div>
                   </div>
                 </motion.div>
